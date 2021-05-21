@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+  
+  tasks:
+    - name: Test print
+      shell: echo $(date) >> /tmp/date2
